@@ -28,7 +28,10 @@
 
 .static-slider__head {
   margin-top: 20px;
-  text-align: center;
+
+  &.isMobile {
+    text-align: center;
+  }
 
   @media (--tablet) {
     margin-top: 40px;
@@ -58,6 +61,6 @@
   flex-shrink: 0;
 
   @media (--tablet) {
-    margin-right: 50px;
+    margin-right: 10%;
   }
 }

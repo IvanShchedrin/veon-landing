@@ -55,6 +55,11 @@ gulp.task('img', function () {
     .pipe(gulp.dest('./dist/img'));
 });
 
+gulp.task('vendor', function () {
+  return gulp.src('./app/vendor/**/*')
+    .pipe(gulp.dest('./dist/vendor'));
+});
+
 gulp.task('dist', ['build'], function() {
   connect.server({
     root: './dist',
@@ -81,4 +86,4 @@ gulp.task('reload', function () {
 
 
 gulp.task('default', ['dist', 'watch']);
-gulp.task('build', ['css', 'js', 'html', 'img']);
+gulp.task('build', ['css', 'js', 'html', 'img', 'vendor']);
