@@ -8,6 +8,9 @@ body {
   color: var(--baseColor);
   background: var(--baseBg);
 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
   @media (--tablet) {
     font-size: 16px;
   }
@@ -27,5 +30,17 @@ body {
 
   @media (--tablet) {
     padding: 40px;
+  }
+}
+
+.isMobile {
+  @media (--tablet) {
+    display: none;
+  }
+}
+
+.isTablet {
+  @media (--mobile) {
+    display: none;
   }
 }
