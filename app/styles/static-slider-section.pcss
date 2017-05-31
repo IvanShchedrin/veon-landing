@@ -26,27 +26,31 @@
   display: block;
 }
 
+.static-slider__head {
+  margin-top: 20px;
+  text-align: center;
+
+  @media (--tablet) {
+    margin-top: 40px;
+  }
+}
+
 .static-slider__h2 {
-  margin: 30px 0;
+  margin: 20px 0;
   padding: 0;
   text-transform: uppercase;
   font-size: 50px;
 }
 
 .static-slider__h3 {
-  margin: 40px 0 30px;
+  margin: 0 0 30px;
   padding: 0;
   text-transform: uppercase;
   font-size: 30px;
 }
 
 .static-slider__info {
-  text-align: center;
   flex-shrink: 1;
-
-  @media (--tablet) {
-    text-align: left;
-  }
 }
 
 .static-slider__phone {
