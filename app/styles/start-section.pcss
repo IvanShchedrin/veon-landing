@@ -1,0 +1,51 @@
+.start {
+  padding: 0 0 50px;
+}
+
+.start__logo {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 30px auto;
+  background: no-repeat 50% 50% url(/img/logo.png);
+  background-size: contain;
+
+  @media (--tablet) {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.start__veon {
+  width: 320px;
+  max-width: 100%;
+  margin: 25px auto;
+  display: none;
+
+  @media (--tablet) {
+    display: block;
+  }
+}
+
+.start__h1 {
+  margin: 25px auto;
+  font-size: 14vw;
+  line-height: 20vw;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  text-align: center;
+
+  @media (--tablet) {
+    font-size: 7vw;
+    line-height: 7.2vw;
+  }
+}
+
+.start__h2 {
+  max-width: 400px;
+  margin: 25px auto;
+  font-size: 22px;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+}

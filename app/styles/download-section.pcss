@@ -1,0 +1,37 @@
+.download {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: var(--mainColor);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-items: center;
+
+  @media (--tablet) {
+    padding-top: 50px;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.download__info {
+  text-align: center;
+  flex-shrink: 1;
+
+  @media (--tablet) {
+    text-align: left;
+  }
+}
+
+.download__phone {
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.download__h2 {
+  margin: 0 0 33px;
+  font-size: 50px;
+  line-height: 1.2;
+}

@@ -1,0 +1,37 @@
+.store-buttons {
+  &_start {
+    text-align: center;
+  }
+  &_download {
+    margin: 0 -10px;
+  }
+}
+
+.store-buttons__link {
+  width: 140px;
+  height: 41px;
+  margin: 0 auto 10px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  transition: opacity .5s;
+
+  @media (--tablet) {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  &_apple {
+    background-image: url(/img/apple-en.png);
+  }
+
+  &_google {
+    background-image: url(/img/google-en.png);
+  }
+
+  &:hover {
+    opacity: .7;
+  }
+}

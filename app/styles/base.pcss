@@ -1,0 +1,31 @@
+html {
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  font: 18px/1.4 'Open Sans', sans-serif;
+  color: var(--baseColor);
+  background: var(--baseBg);
+
+  @media (--tablet) {
+    font-size: 16px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.section {
+  width: 100%;
+  padding: 20px;
+
+  @media (--tablet) {
+    padding: 40px;
+  }
+}
