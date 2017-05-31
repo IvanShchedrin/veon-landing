@@ -17,10 +17,11 @@
 .faq-item__question {
   padding: 12px 0 16px;
   border-bottom: 2px solid #ececec;
-  color: rgb(255, 204, 0);
+  color: rgba(255, 204, 0, .7);
   font-size: 21px;
   line-height: 28px;
-  transition: margin-bottom .3s;
+  transition: margin-bottom .5s;
+  cursor: pointer;
 }
 
 .faq-item__answer {
@@ -28,18 +29,19 @@
   line-height: 25px;
   max-height: 0;
   overflow-y: hidden;
-  transition: max-height .3s;
+  transition: max-height .5s;
 }
 
 .faq-item.active {
   & .faq-item__answer {
-    transition: max-height 1s;
+    transition: max-height 1.2s;
     max-height: 620px;
   }
 
   & .faq-item__question {
     border-bottom: 1px solid #ececec;
     margin-bottom: 20px;
+    color: rgb(255, 204, 0);
   }
 }
 

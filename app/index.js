@@ -16,3 +16,14 @@ var faqItems = document.querySelectorAll('.faq-item > .faq-item__question');
     }
   });
 });
+
+document.querySelector('.video-section .play-button').addEventListener('click', function() {
+  var videoPopup = document.querySelector('.video-popup');
+  if (videoPopup) {
+    videoPopup.classList.add('shown');
+  }
+});
+
+document.querySelector('.video-popup').addEventListener('click', function(event) {
+  event.target.classList.remove('shown');
+});
