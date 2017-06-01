@@ -60,6 +60,11 @@ gulp.task('vendor', function () {
     .pipe(gulp.dest('./dist/vendor'));
 });
 
+gulp.task('fonts', function () {
+  return gulp.src('./app/fonts/*')
+    .pipe(gulp.dest('./dist/fonts'));
+});
+
 gulp.task('dist', ['build'], function() {
   connect.server({
     root: './dist',
@@ -86,4 +91,4 @@ gulp.task('reload', function () {
 
 
 gulp.task('default', ['dist', 'watch']);
-gulp.task('build', ['css', 'js', 'html', 'img', 'vendor']);
+gulp.task('build', ['css', 'js', 'html', 'img', 'vendor', 'fonts']);
