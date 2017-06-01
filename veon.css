@@ -74,7 +74,7 @@ body {
   height: 200px;
   display: block;
   margin: 30px auto;
-  background: no-repeat 50% 50% url(/img/logo.png);
+  background: no-repeat 50% 50% url(./img/logo.png);
   background-size: contain
 }
 @media (min-width: 768px) {
@@ -121,7 +121,7 @@ body {
   height: 130vw;
   max-height: 965px;
   position: relative;
-  background: no-repeat 0 0 url(../img/screen2-bg.jpg);
+  background: no-repeat 0 0 url(./img/screen2-bg.jpg);
   background-size: cover
 }
 @media (min-width: 768px) {
@@ -132,7 +132,7 @@ body {
 @media (min-width: 1004px) {
     .video-section {
     height: 70vw;
-    background-image: url(../img/screen2-bg-desktop.jpg);
+    background-image: url(./img/screen2-bg-desktop.jpg);
     }
   }
 .play-button {
@@ -155,7 +155,7 @@ body {
   cursor: pointer;
   z-index: 9;
   position: relative;
-  background: no-repeat 50% 50% url(/img/video-button.png);
+  background: no-repeat 50% 50% url(./img/video-button.png);
   background-size: contain
 }
 @media (min-width: 768px) {
@@ -280,7 +280,7 @@ body {
   }
 .slogan {
   padding: 120px 0;
-  background: no-repeat 100% 0 url(/img/slogan-bg.jpg);
+  background: no-repeat 100% 0 url(./img/slogan-bg.jpg);
   background-size: cover;
 }
 .slogan__txt {
@@ -480,7 +480,7 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   display: block;
-  background: no-repeat 50% 50% url(/img/logo-white.png);
+  background: no-repeat 50% 50% url(./img/logo-white.png);
   background-size: contain
 }
 @media (min-width: 768px) {
@@ -710,10 +710,10 @@ body {
     }
   }
 .store-buttons__link_apple {
-    background-image: url(/img/apple-en.png);
+    background-image: url(./img/apple-en.png);
 }
 .store-buttons__link_google {
-    background-image: url(/img/google-en.png);
+    background-image: url(./img/google-en.png);
 }
 .store-buttons__link:hover {
     opacity: .7;
