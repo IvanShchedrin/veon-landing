@@ -19,11 +19,16 @@ var faqItems = document.querySelectorAll('.faq-item > .faq-item__question');
 
 document.querySelector('.video-section .play-button').addEventListener('click', function() {
   var videoPopup = document.querySelector('.video-popup');
+  var iframe = document.querySelector('.video-popup__video');
+
   if (videoPopup) {
     videoPopup.classList.add('shown');
+    iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}','*');
   }
 });
 
 document.querySelector('.video-popup').addEventListener('click', function(event) {
+  var iframe = document.querySelector('.video-popup__video');
   event.target.classList.remove('shown');
+  iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
 });
