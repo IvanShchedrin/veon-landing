@@ -39,11 +39,11 @@ gulp.task('html', function () {
   return gulp.src('./app/*.html')
     .pipe(htmlreplace({
         css: {
-            src: 'veon.css',
+            src: './veon.css',
             tpl: '<link href="%s" rel="stylesheet">'
         },
         js: {
-            src: '/veon.js',
+            src: './veon.js',
             tpl: '<script src="%s"></script>'
         }
      }))
