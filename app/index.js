@@ -32,3 +32,17 @@ document.querySelector('.video-popup').addEventListener('click', function(event)
   event.target.classList.remove('shown');
   iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}','*');
 });
+
+var staticSlider = document.querySelector('.static-slider__phone');
+var staticSliderImages = staticSlider.querySelectorAll('.static-slider__phone-image');
+
+setInterval(function() {
+  var shownImage = staticSlider.querySelector('.shown');
+
+  shownImage.classList.remove('shown');
+  if (shownImage.nextElementSibling) {
+    shownImage.nextElementSibling.classList.add('shown');
+  } else {
+    staticSliderImages[0].classList.add('shown');
+  }
+}, 7000);

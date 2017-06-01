@@ -71,8 +71,24 @@
 .static-slider__phone {
   width: 320px;
   flex-shrink: 0;
+  position: relative;
 
   @media (--tablet) {
     margin-дуае: 10%;
   }
+}
+
+.static-slider__phone-image {
+  opacity: 0;
+  transition: opacity 1s;
+
+  &.shown {
+    opacity: 1;
+  }
+}
+
+.static-slider__phone-image + .static-slider__phone-image {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
