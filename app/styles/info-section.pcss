@@ -1,6 +1,49 @@
 .info {
   background: var(--baseColor);
   color: var(--baseBg);
+
+}
+
+.info__content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-items: center;
+
+  @media (--tablet) {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.info__logo {
+  width: 60px;
+  height: 80px;
+  margin: 3px 0 40px;
+  flex-shrink: 0;
+  display: block;
+  background: no-repeat 50% 50% url(/img/logo-white.png);
+  background-size: contain;
+
+  @media (--tablet) {
+    margin-right: 30px;
+  }
+}
+
+.info__block {
+  flex-shrink: 1;
+}
+
+.info__h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+}
+
+.info__text {
+  margin-top: 0;
 }
 
 .quick-links {
