@@ -9,9 +9,9 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./img/v-114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/v-72.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./img/v-144.png">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i&amp;subset=cyrillic-ext" rel="stylesheet">
     <link href="./vendor/css/swiper.min.css" rel="stylesheet">
     <link href="./veon.css" rel="stylesheet">
+    <script src="./vendor/js/device.min.js"></script>
   </head>
   <body>
     <div class="section start">
@@ -107,7 +107,7 @@
             <div class="swiper-content" data-num="4">
               <div class="swiper-content__head isMobile">
                 <h3 class="swiper-content__h3">Скидки и акции</h3>
-                <h2 class="swiper-content__h2">Подарки от наших партнеров</h2>
+                <h2 class="swiper-content__h2">Подарки от партнеров</h2>
               </div>
               <div class="swiper-content__phone">
                 <img class="img-screen" src="./img/swiper-4.png" alt="">
@@ -115,7 +115,7 @@
               <div class="swiper-content__info">
                 <div class="swiper-content__head isTablet">
                   <h3 class="swiper-content__h3">Скидки и акции</h3>
-                  <h2 class="swiper-content__h2">Подарки от наших партнеров</h2>
+                  <h2 class="swiper-content__h2">Подарки от партнеров</h2>
                 </div>
                 <p>Наши партнеры дарят бесплатные промо-периоды, скидки и другие бонусы.</p>
               </div>
@@ -124,7 +124,7 @@
           <div class="swiper-slide">
             <div class="swiper-content" data-num="5">
               <div class="swiper-content__head isMobile">
-                <h3>Фильмы в VEON</h3>
+                <h3 class="swiper-content__h3">Фильмы в VEON</h3>
                 <h2 class="swiper-content__h2">Кино — даром</h2>
               </div>
               <div class="swiper-content__phone">
@@ -135,7 +135,7 @@
                   <h3 class="swiper-content__h3">Фильмы в VEON</h3>
                   <h2 class="swiper-content__h2">Кино — даром</h2>
                 </div>
-                <p>Смотри новые и популярны</p>
+                <p>Смотри новые и популярные фильмы легально и бесплатно. Подробнее о каталоге фильмов — в приложении VEON.</p>
               </div>
             </div>
           </div>
@@ -161,7 +161,7 @@
             <div class="swiper-content" data-num="7">
               <div class="swiper-content__head isMobile">
                 <h3 class="swiper-content__h3">VEON доступен всегда</h3>
-                <h2 class="swiper-content__h2">Пользуйся при нулевом балансе</h2>
+                <h2 class="swiper-content__h2">Пользуйся при нуле</h2>
               </div>
               <div class="swiper-content__phone">
                 <img class="img-screen" src="./img/swiper-7.png" alt="">
@@ -169,14 +169,17 @@
               <div class="swiper-content__info">
                 <div class="swiper-content__head isTablet">
                   <h3 class="swiper-content__h3">VEON доступен всегда</h3>
-                  <h2 class="swiper-content__h2">Пользуйся при нулевом балансе</h2>
+                  <h2 class="swiper-content__h2">Пользуйся при нуле</h2>
                 </div>
                 <p class="swiper-content__text">VEON не расходует твой мобильный интернет, если у тебя «Билайн». Звони, общайся, попробуй все возможности VEON без ограничений даже при нулевом балансе.</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- Add Pagination -->
+        <div class="swiper-buttons">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
         <div class="swiper-pagination"></div>
       </div>
     </div>
@@ -213,7 +216,7 @@
     <div class="section slogan">
       <div class="content">
         <div class="slogan__txt">
-          Всё, что тебе интересно – уже в VEON
+          Всё,<br> что тебе интересно<br> &mdash; уже в VEON
         </div>
       </div>
     </div>
@@ -299,7 +302,7 @@
 
     <div class="section footer">
       <div class="content">
-        TODO
+        
       </div>
     </div>
 
@@ -308,8 +311,12 @@
     <script>
       if (typeof Swiper === 'function') {
         var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true
+          pagination: '.swiper-pagination',
+          nextButton: '.swiper-button-next',
+          prevButton: '.swiper-button-prev',
+          slidesPerView: 1,
+          paginationClickable: true,
+          loop: true
         });
       }
     </script>
